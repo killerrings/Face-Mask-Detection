@@ -15,4 +15,4 @@ git clone https://github.com/killerrings/Face-Mask-Detection.git
 • Please do ⭐ the repository, if it helped you
 
 • A glimpse of the web app:
-![](demo1.gif)
+![](demo.gif)

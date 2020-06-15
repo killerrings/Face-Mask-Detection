@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>codingtrain1</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+	<script src="sketch.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<style>
+		.bg-steel {
+		  	background-color: #5d001e;
+			}
+
+		.site-header .navbar-nav .nav-link {
+		  	color: #cbd5db;
+			}
+
+		.site-header .navbar-nav .nav-link:hover {
+		  	color: #ffffff;
+			}
+
+		.site-header .navbar-nav .nav-link.active {
+		  	font-weight: 500;
+			}
+
+		#body {			
+			background-color: #1a1a1d;
+			margin:0;
+			padding:0;
+			overflow: hidden;
+
+		}
+		canvas {
+			margin:auto;
+		}
+
+		#container{
+			padding-top: 20px;
+		}
+	</style>
+
+</head>
+<body id ='body'>
+	<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">Face Mask Detection</a>
+          <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="">Home</a>
+			  <a class="nav-item nav-link" href="index2.html">Train Model</a>
+			  <a class="nav-item nav-link" href="index.html">Predict Model</a>
+            </div>
+            
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="">Login</a>
+              <a class="nav-item nav-link" href="">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+	</header>
+	<br>
+	
+	<div id="container">
+		<br>
+		<div class="row">	
+			<div class="col-sm-8">
+				<div id = "video_holder"></div>
+			</div>			
+		</div>			
+	</div>
+</body>
+</html>
